@@ -1,16 +1,18 @@
 .header {
   padding: 20px 0;
+  margin: 0 auto;
 }
 .nav {
   display: flex;
   justify-content: space-between;
 }
 .nav-logo {
-  display: inline-flex;
+    display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 .nav-list {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
