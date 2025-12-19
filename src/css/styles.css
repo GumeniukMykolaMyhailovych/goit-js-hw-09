@@ -42,3 +42,67 @@
 .sl-wrapper .sl-image {
   background-color: transparent !important;
 }
+
+/* =====Form===== */
+
+.feedback-form {
+  width: 408px;
+  height: auto;
+  padding: 24px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+ 
+  padding: 8px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  resize: none;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: #4e75ff;
+}
+
+.feedback-form button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  min-width: 95px;
+  height: 40px;
+
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.feedback-form button:hover,
+.feedback-form button:focus {
+  background-color: #6c8cff;
+}
