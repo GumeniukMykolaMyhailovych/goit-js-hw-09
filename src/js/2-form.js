@@ -1,9 +1,7 @@
 const STORAGE_KEY = 'feedback-form-state';
 
-/**
- * Обʼєкт стану форми
- * (поза будь-якими функціями)
- */
+
+
 const formData = {
   email: '',
   message: '',
@@ -11,9 +9,8 @@ const formData = {
 
 const formEl = document.querySelector('.feedback-form');
 
-/**
- * ===== ВІДНОВЛЕННЯ ДАНИХ З localStorage =====
- */
+
+
 const savedData = localStorage.getItem(STORAGE_KEY);
 
 if (savedData) {
@@ -26,9 +23,8 @@ if (savedData) {
   formEl.elements.message.value = formData.message;
 }
 
-/**
- * ===== ОБРОБКА INPUT (делегування) =====
- */
+
+
 formEl.addEventListener('input', event => {
   const { name, value } = event.target;
 
@@ -41,9 +37,8 @@ formEl.addEventListener('input', event => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 });
 
-/**
- * ===== ОБРОБКА SUBMIT =====
- */
+
+
 formEl.addEventListener('submit', event => {
   event.preventDefault();
 

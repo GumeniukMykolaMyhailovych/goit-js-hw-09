@@ -1,9 +1,7 @@
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-/**
- * Масив зображень (як у минулому ДЗ)
- */
+
 const images = [
         {
       preview:
@@ -70,14 +68,12 @@ const images = [
     },
 ];
 
-/**
- * Посилання на галерею
- */
+
+
 const galleryEl = document.querySelector('.gallery');
 
-/**
- * Створення розмітки галереї
- */
+
+
 const galleryMarkup = images
   .map(
     ({ preview, original, description }) => `
@@ -96,10 +92,8 @@ const galleryMarkup = images
 
 galleryEl.innerHTML = galleryMarkup;
 
-/**
- * Ініціалізація SimpleLightbox
- * ❗ ПІСЛЯ додавання елементів у DOM
- */
+
+
 new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
